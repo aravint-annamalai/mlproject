@@ -47,7 +47,7 @@ class DataTransformation:
                     ("imputer", SimpleImputer(strategy="most_frequent")),
                     ("one_hot_encoder", OneHotEncoder()),
                     ("scaler", StandardScaler(with_mean=False))
-                ]
+                ] 
             )
 
             logging.info(f"Categorical columns: {categorical_columns}")
